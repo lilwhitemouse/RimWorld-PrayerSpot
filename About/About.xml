@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModMetaData>
+<name>Simple Prayer Spot</name>
+<author>LWM and TOGFox</author>
+<supportedVersions>
+  <li>1.0</li>
+</supportedVersions>
+<description>Place one or more spots in your colony to direct pawns where to pray.</description>
+
+</ModMetaData>

@@ -1,0 +1,6 @@
+/home/peter/play/rimworld/PrayerSpot/Source/bin/Debug/PrayerSpot.dll
+/home/peter/play/rimworld/PrayerSpot/Source/bin/Debug/PrayerSpot.pdb
+/home/peter/play/rimworld/PrayerSpot/Source/obj/Debug/PrayerSpot.csprojAssemblyReference.cache
+/home/peter/play/rimworld/PrayerSpot/Source/obj/Debug/PrayerSpot.csproj.CoreCompileInputs.cache
+/home/peter/play/rimworld/PrayerSpot/Source/obj/Debug/PrayerSpot.dll
+/home/peter/play/rimworld/PrayerSpot/Source/obj/Debug/PrayerSpot.pdb
