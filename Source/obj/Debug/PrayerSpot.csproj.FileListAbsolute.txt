@@ -4,3 +4,5 @@
 /home/peter/play/rimworld/PrayerSpot/Source/obj/Debug/PrayerSpot.csproj.CoreCompileInputs.cache
 /home/peter/play/rimworld/PrayerSpot/Source/obj/Debug/PrayerSpot.dll
 /home/peter/play/rimworld/PrayerSpot/Source/obj/Debug/PrayerSpot.pdb
+/home/peter/play/rimworld/PrayerSpot/Source/bin/Debug/0Harmony.dll
+/home/peter/play/rimworld/PrayerSpot/Source/obj/Debug/PrayerSpot.csproj.CopyComplete

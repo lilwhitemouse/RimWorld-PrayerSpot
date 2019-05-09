@@ -52,11 +52,15 @@
       <HintPath>..\..\RimWorld\RimWorldLinux_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>..\Assemblies\0Harmony.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="PrayerSpotMod.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="LWM_JoyGiver_Prayer.cs" />
+    <Compile Include="LWM_JoyGiver_Spiritual.cs" />
+    <Compile Include="Patch_JobDriver_RelaxAlone.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

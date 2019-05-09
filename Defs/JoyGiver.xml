@@ -2,7 +2,7 @@
 <Defs>
   <JoyGiverDef>
     <defName>LWM_Pray_Simple</defName>
-    <giverClass>LWM.PrayerSpot.JoyGiver_Prayer_Simple</giverClass>
+    <giverClass>LWM.PrayerSpot.JoyGiver_Spiritual_Simple</giverClass>
     <baseChance>1</baseChance>
     <pctPawnsEverDo>0.5</pctPawnsEverDo>
     <jobDef>Pray</jobDef>
