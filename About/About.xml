@@ -27,6 +27,10 @@ Future plans:
  * Mod Options to turn off any functionality? (probably via HugsLib)
  ** Disallow praying in rooms, so everyone goes to church to pray!
 
+License: LGPL
+
+GitHub: https://github.com/lilwhitemouse/RimWorld-PrayerSpot
+ 
 Thanks to TOGFox for some initial work (which wasn't used in the end) and for some initial prodding (which was very useful) and support.
 </description>
 </ModMetaData>
