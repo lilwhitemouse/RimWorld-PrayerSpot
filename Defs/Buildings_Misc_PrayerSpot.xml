@@ -5,23 +5,23 @@
     <label>Prayer Spot</label>
     <description>Designates a spot for praying.</description>
     <thingClass>Building</thingClass>
+    <category>Building</category>
+    <selectable>true</selectable>
     <graphicData>
       <texPath>PrayerSpot</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <altitudeLayer>FloorEmplacement</altitudeLayer>
     <statBases>
       <WorkToBuild>0</WorkToBuild>
     </statBases>
     <rotatable>false</rotatable>
-    <scatterableOnMapGen>false</scatterableOnMapGen>
+    <scatterableOnMapGen>true</scatterableOnMapGen><!-- Sure why not? -->
     <useHitPoints>False</useHitPoints>
     <designationCategory>Misc</designationCategory>
-    <passability>Standable</passability>
     <building>
-      <sowTag>SupportPlantsOnly</sowTag>
-      <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+      <canPlaceOverImpassablePlant>true</canPlaceOverImpassablePlant>
       <ai_chillDestination>false</ai_chillDestination>
+      <isEdifice>false</isEdifice>
     </building>
   </ThingDef>
   <ThingDef ParentName="LWM_PrayerSpot">
@@ -53,7 +53,7 @@
     </statBases>
 <!--     <scatterableOnMapGen>true</scatterableOnMapGen><!- - just in case people want to get crazy? -->
     <useHitPoints>false</useHitPoints>
-    <designationCategory>Misc</designationCategory>
+    <!--      <designationCategory>Misc</designationCategory>-->
     <!--     <passability>Standable</passability>-->
     <building>
 <!--       <sowTag>Ground</sowTag><!- - ? -->
