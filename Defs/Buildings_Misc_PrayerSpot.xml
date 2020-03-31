@@ -47,7 +47,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <rotatable>false</rotatable>
-    <!--     <altitudeLayer>FloorEmplacement</altitudeLayer>-->
+    <!-- TODO: this is probably only display?  So put it in...    <altitudeLayer>FloorEmplacement</altitudeLayer>-->
     <statBases>
       <WorkToBuild>0</WorkToBuild>
     </statBases>
