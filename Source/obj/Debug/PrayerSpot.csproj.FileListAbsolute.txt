@@ -1,8 +1,10 @@
-/home/peter/play/rimworld/PrayerSpot/Source/bin/Debug/PrayerSpot.dll
-/home/peter/play/rimworld/PrayerSpot/Source/bin/Debug/PrayerSpot.pdb
+/home/peter/play/rimworld/PrayerSpot/Assemblies/PrayerSpot.dll
+/home/peter/play/rimworld/PrayerSpot/Assemblies/PrayerSpot.pdb
 /home/peter/play/rimworld/PrayerSpot/Source/obj/Debug/PrayerSpot.csprojAssemblyReference.cache
-/home/peter/play/rimworld/PrayerSpot/Source/obj/Debug/PrayerSpot.csproj.CoreCompileInputs.cache
 /home/peter/play/rimworld/PrayerSpot/Source/obj/Debug/PrayerSpot.dll
 /home/peter/play/rimworld/PrayerSpot/Source/obj/Debug/PrayerSpot.pdb
-/home/peter/play/rimworld/PrayerSpot/Source/bin/Debug/0Harmony.dll
-/home/peter/play/rimworld/PrayerSpot/Source/obj/Debug/PrayerSpot.csproj.CopyComplete
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\PrayerSpot\1.2\Assemblies\PrayerSpot.dll
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\PrayerSpot\1.2\Assemblies\PrayerSpot.pdb
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\PrayerSpot\Source\obj\Debug\PrayerSpot.csproj.CoreCompileInputs.cache
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\PrayerSpot\Source\obj\Debug\PrayerSpot.dll
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\PrayerSpot\Source\obj\Debug\PrayerSpot.pdb
