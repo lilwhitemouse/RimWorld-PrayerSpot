@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -7,60 +7,46 @@
     <OutputType>Library</OutputType>
     <RootNamespace>PrayerSpot</RootNamespace>
     <AssemblyName>PrayerSpot</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <ReleaseVersion>0.1.1</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug</OutputPath>
+    <OutputPath>..\1.2\Assemblies</OutputPath>
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
-    <CustomCommands>
-      <CustomCommands>
-        <Command>
-          <type>AfterBuild</type>
-          <command>/bin/cp ${TargetFile} ${ProjectDir}/../Assemblies/</command>
-        </Command>
-      </CustomCommands>
-    </CustomCommands>
-    <!-- For msbuild on command line.  Seriously, they cannot use the same xml structure? :p -->
-    <PostBuildEvent>/bin/cp "$(MSBuildProjectDirectory)/$(OutputPath)/$(AssemblyName).dll" "$(MSBuildProjectDirectory)/../Assemblies/"</PostBuildEvent>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release</OutputPath>
+    <OutputPath>..\1.2\Assemblies</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
-<!-- For msbuild on command line.  Seriously, they cannot use the same xml structure? :p -->
-    <PostBuildEvent>/bin/cp "$(MSBuildProjectDirectory)/$(OutputPath)/$(AssemblyName).dll" "$(MSBuildProjectDirectory)/../Assemblies/"</PostBuildEvent>
-    <CustomCommands>
-      <CustomCommands>
-        <Command>
-          <type>AfterBuild</type>
-          <command>/bin/cp ${TargetFile} ${ProjectDir}/../Assemblies/</command>
-        </Command>
-      </CustomCommands>
-    </CustomCommands>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
-		<Reference Include="Assembly-CSharp">
-      <HintPath>..\..\RimWorld\RimWorldLinux_Data\Managed\Assembly-CSharp.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="0Harmony">
-      <HintPath>..\Assemblies\0Harmony.dll</HintPath>
-    </Reference>
+    <PackageReference Include="Krafs.Rimworld.Ref">
+      <Version>*</Version>
+      <ExcludeAssets>runtime</ExcludeAssets>
+      <IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Lib.Harmony">
+      <Version>*</Version>
+      <ExcludeAssets>runtime</ExcludeAssets>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PrayerSpotMod.cs" />
+    <Compile Include="LoadHarmony.cs" />
+    <Compile Include="Patch_JobDriver_RelaxAlone_RelaxToil.cs" />
+    <Compile Include="Defs.cs" />
+    <Compile Include="Utilities.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="LWM_JoyGiver_Spiritual.cs" />
-    <Compile Include="Patch_JobDriver_RelaxAlone.cs" />
+    <Compile Include="JoyGiver_Spiritual_Simple.cs" />
+    <Compile Include="Patch_JobDriver_RelaxAlone_Toil_Delegate.cs" />
+    <Compile Include="RoomRoleWorker_Chapel.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
